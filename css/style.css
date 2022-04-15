@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232e4b;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+.setupForm {
+  width: 550px;
+  margin: 40px auto;
+  display: flex;
+}
+.custom_input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+}
+select {
+  background-color: transparent;
+  /* width: 130%; */
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.custom_input option {
+  padding: 15px 18px;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.calculate_btn {
+  margin-left: 10px;
+  background: rgb(239, 80, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 92, 128, 1) 0%,
+    rgba(239, 80, 153, 1) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+}
+
+#testid {
+  background-color: transparent;
+}
+
+.open {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  /* text-transform: uppercase; */
+}
+
+.card_block {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.486);
+  /* background: rgb(239, 80, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 92, 128, 1) 0%,
+    rgba(239, 80, 153, 1) 100%
+  ); */
+  padding: 10px 5px;
+}
+
+.long_target_percentage {
+  color: #55f481;
+}
+.short_target_percentage {
+  color: #55f481;
+}
+.short_stop_loss {
+  color: #ef5099;
+}
+.long_stop_loss {
+  color: #ef5099;
+}
+
+.short_card {
+  margin-left: 40px;
+  color: #fff;
+}
+
+.side {
+  font-size: 20px;
+}
+.flexInputs {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.pLabel {
+  color: rgba(255, 255, 255, 0.507);
+  margin-right: 10px;
+}
+
+hr {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .setupForm {
+    width: auto;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .custom_input {
+    margin: 10px 5px;
+  }
+  .calculate_btn {
+    margin: 10px 5px;
+  }
+  .setupForm {
+    margin-top: 5px;
+  }
+  .open {
+    margin: 10px;
+    font-size: 20px;
+  }
+  .card_block {
+    margin-top: 5px;
+    padding: 0 20px;
+  }
+  .side {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .card_body {
+    text-align: left;
+    padding-left: 5px;
+    margin-top: 10px;
+  }
+  .flexInputs {
+    justify-content: flex-start;
+  }
+
+  .card {
+    height: auto;
+  }
+}

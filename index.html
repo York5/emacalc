@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Long Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="setupForm" action="">
+        <input
+          type="text"
+          class="price_input custom_input"
+          placeholder="Asset price"
+        />
+        <select class="currencySelect custom_input">
+          <option id="testid" style="background: #232e4b" , value="ETH">
+            ETH
+          </option>
+
+          <option id="testid" style="background: #232e4b" value="LUNA">
+            LUNA
+          </option>
+        </select>
+        <select class="posiitonToRibbon custom_input">
+          <option value="above" style="background: #232e4b" selected>
+            Above Ribbon
+          </option>
+          <option value="below" style="background: #232e4b">
+            Below Ribbon
+          </option>
+        </select>
+        <button class="calculate_btn" type="submit">Calculate!</button>
+      </form>
+
+      <p class="open">Price:</p>
+
+      <div class="card_block">
+        <div class="long_card card">
+          <p class="side">Long</p>
+          <hr />
+          <div class="card_body">
+            <div class="flexInputs">
+              <p class="pLabel">Order Type:</p>
+              <p class="long_order_type"></p>
+            </div>
+
+            <div class="flexInputs">
+              <p class="pLabel">Take Profit:</p>
+              <p class="long_target_percentage"></p>
+            </div>
+
+            <div class="flexInputs">
+              <p class="pLabel">Stop Loss:</p>
+              <p class="long_stop_loss"></p>
+            </div>
+          </div>
+        </div>
+        <div class="short_card card">
+          <p class="side">Short</p>
+          <hr />
+          <div class="card_body">
+            <div class="flexInputs">
+              <p class="pLabel">Order Type:</p>
+              <p class="short_order_type"></p>
+            </div>
+
+            <div class="flexInputs">
+              <p class="pLabel">Take Profit:</p>
+              <p class="short_target_percentage"></p>
+            </div>
+
+            <div class="flexInputs">
+              <p class="pLabel">Stop Loss:</p>
+              <p class="short_stop_loss"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
